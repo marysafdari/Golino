@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00695c</color>
+    <color name="colorPrimaryDark">#004d40</color>
+    <color name="colorAccent">#2962ff</color>
+
+
+    <color name="primaryDarkLogin">#1565C0</color>
+    <color name="primaryLogin">#0D47A1</color>
+    <color name="accentLogin">#29B6F6</color>
+
+
+
+
+
+    <color name="color_accent">#2962ff</color>
+
+    <color name="color_ic_drawer">#26a69a</color>
+
+    <color name="color_btn_ripple_effect">#3f51b5</color>
+    <color name="color_btn_ripple_effect_red">#CA51B5</color>
+
+    <color name="color_et_bg_search_map">#f7f5f5</color>
+    <color name="color_text_search_maps">#000000</color>
+
+
+    <color name="color_background_login">#f7f5f5</color>
+    <color name="color_background_sign_up">#FFFFFF</color>
+    <color name="color_background_information_sign_up">#f7f5f5</color>
+
+
+    <!--Button background color-->
+    <color name="color_btn_bg_login">#FFFFFFFF</color>
+    <color name="color_btn_bg_register">#CC2F4D99</color>
+    <color name="color_btn_stroke_login">#0D47A1</color>
+    <color name="color_btn_text_login">#FFFFFF</color>
+    <color name="btn_splash_text_color">#2F4D99</color>
+    <color name="et_hint_color">#BBFFFFFF</color>
+    <color name="ets_color_white">#FFF</color>
+
+
+    <color name="title_FavAdress">#392F2F</color>
+    <color name="title_address_FavAdress">#392F2F</color>
+    <color name="color_btn_add_detail_GetLocation">#2962ff</color>
+    <color name="color_btn_cancel_detail_GetLocation">#FF0033</color>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/childLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_splash_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btn_bg_login_splash"
+            android:fontFamily="@font/iranian_sans"
+            android:onClick="onBtnSplashLoginClick"
+            android:text="ورود"
+            android:textColor="@color/btn_splash_text_color"
+            android:textSize="@dimen/btn_text_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btn_splash_register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_splash_register"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/btn_bg_register_splash"
+            android:fontFamily="@font/iranian_sans"
+            android:onClick="onBtnSplashRegisterClick"
+            android:text="ثبت نام"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/btn_text_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

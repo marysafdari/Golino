@@ -1,0 +1,30 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="لطفا کد ارسال شده را اینجا وارد کنید:"
+        android:fontFamily="@font/iranian_sans"
+        android:textSize="18dp"
+        android:layout_gravity="right" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/et_dlg_input_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textDirection="rtl"
+            android:imeOptions="actionDone"
+            android:hint="کد فعال سازی"
+            android:inputType="numberDecimal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+</FrameLayout>

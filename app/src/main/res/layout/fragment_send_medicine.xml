@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:fitsSystemWindows="true">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!--Replaced lin_lyt_add_photo -->
+        <ImageView
+            android:id="@+id/iv_prescription_drug"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/content_description_icon_add_photo"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/lin_lyt_add_photo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/lin_lyt_bg_add_photo"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:onClick="onClick"
+            android:orientation="vertical"
+            android:textDirection="rtl"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/content_description_icon_add_photo"
+                app:srcCompat="@drawable/ic_add_a_photo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/tv_add_photo_send_medicine"
+                android:textSize="@dimen/tv_add_photo_send_medicine_size" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:id="@+id/lin_lyt_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/lin_lyt_bg_item_send_medicine_activity"
+            android:clickable="true"
+            android:focusable="true"
+            android:layoutDirection="rtl"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/content_description_icon_add_location"
+                app:srcCompat="@drawable/ic_add_location" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="@color/color_accent" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/tv_add_location_send_medicine"
+                android:textDirection="rtl" />
+
+        </LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rb_normal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="معمولی"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rb_rare"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="کم یاب"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rb_choice"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="انتخابی"/>
+
+
+        </LinearLayout>
+
+
+        <!--this linear layout is for background button along with ripple effect-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg_login"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/btn_send_drug"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_ripple_effect"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onClick"
+                android:text="ارسال نسخه"
+                android:textColor="@color/color_btn_text_login"
+                android:textSize="@dimen/btn_text_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--</ScrollView>-->
+
+
+</ScrollView>

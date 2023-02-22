@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width_ic_information_sign_up">28dp</dimen>
+    <dimen name="height_ic_information_sign_up">28dp</dimen>
+
+    <dimen name="btn_text_size">14sp</dimen>
+
+    <dimen name="tv_add_photo_send_medicine_size">10sp</dimen>
+
+    <dimen name="tv_accurate_address_send_medicine_size">14sp</dimen>
+    <dimen name="et_search_maps_size">16sp</dimen>
+
+    <dimen name="width_et_information_sign_up">270dp</dimen>
+    <dimen name="height_et_information_sign_up">50dp</dimen>
+
+</resources>

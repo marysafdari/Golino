@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/order_drug"
+            android:icon="@drawable/ic_medicine_drawer"
+            android:title="سفارش دارو" />
+        <item
+            android:id="@+id/order_flower"
+            android:icon="@drawable/ic_local_florist_drawer"
+            android:title="سفارش گل" />
+        <item
+            android:id="@+id/history_order"
+            android:icon="@drawable/ic_format_list_bulleted_drawer"
+            android:title="سفارشات گذشته" />
+
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="all">
+
+        <item
+            android:id="@+id/increase_credit"
+            android:icon="@drawable/ic_credit_card_drawer"
+            android:title="افزایش اعتبار" />
+
+        <item
+            android:id="@+id/test11"
+            android:icon="@drawable/ic_local_pharmacy_code_presentation_drawer"
+            android:title="کد معرف" />
+
+        <item
+            android:id="@+id/test111"
+            android:icon="@drawable/ic_supervisor_account_invation_drawer"
+            android:title="دعوت دوستان" />
+
+    </group>
+
+
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/test5"
+            android:icon="@drawable/ic_perm_phone_msg_drawer"
+            android:title="تماس با ما" />
+        <item
+            android:id="@+id/test6"
+            android:icon="@drawable/ic_info_drawer"
+            android:title="درباره ما" />
+        <item
+            android:id="@+id/test7"
+            android:icon="@drawable/ic_exit_to_app_drawer"
+            android:title="خروج از حساب کاربری" />
+
+
+    </group>
+
+</menu>

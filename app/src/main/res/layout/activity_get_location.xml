@@ -1,0 +1,93 @@
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.MapsActivity" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.meri.golinomedicen.ui.activities.maps.MapsActivity">
+
+     <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/loc_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_add_a_photo" />
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_add_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_bg_login"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toTopOf="@+id/layout_cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_add_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_ripple_effect_blue"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/add_detail_GetLocation"
+                android:textColor="@color/color_btn_add_detail_GetLocation"
+                android:textSize="@dimen/btn_text_size" />
+            <!--android:background="@drawable/btn_bg_login"-->
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_bg_login"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cancel_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_ripple_effect_red"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/cancel_detail_GetLocation"
+                android:textColor="@color/color_btn_cancel_detail_GetLocation"
+                android:textSize="@dimen/btn_text_size" />
+            <!--android:background="@drawable/btn_bg_login"-->
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">گلینو</string>
+
+
+    <string name="btn_send_number_text">ارسال کد تایید</string>
+    <string name="btn_send_code_text">ورود</string>
+    <string name="text_toast_number_login_activity">شماره وارد شده معتبر نیست!</string>
+    <string name="text_toast_code_login_activity">کد وارد شده معتبر نیست!</string>
+
+
+    <string name="et_number_hint_login">09...</string>
+    <string name="et_sms_code">کد پیامک شده را وارد نمایید</string>
+    <string name="content_description_icon_phone_android"> mobile </string>
+
+    <string name="et_name_family_hint_sign_up">نام و نام خانوادگی</string>
+    <string name="et_mail_hing_sign_up">ایمیل (‌اختیاری) </string>
+    <string name="et_code_presentation_sign_up">کد معرف (اختیاری)</string>
+
+    <string name="btn_sign_up_confirm">تایید</string>
+
+    <string name="btn_maps_confirm">تایید</string>
+
+    <string name="title_sign_up">ثبت نام در گلینو</string>
+
+
+    <string name="content_description_icon_add_photo"> photo </string>
+
+    <string name="content_description_icon_add_location"> location </string>
+
+
+    <string name="tv_add_photo_send_medicine">لطفا عکس نسخه را وارد کنید</string>
+    <string name="tv_add_location_send_medicine">لطفا آدرس رو خود را وارد کنید</string>
+    <string name="tv_accurate_address_send_medicine">آدرس دقیق </string>
+    <string name="et_accurate_address_hing_send_medicine">ادرس دقیق خود را وارد نمایید....</string>
+    <string name="tv_sign_up_roles"> <u>قوانین را می پذیرم.</u></string>
+
+    <string name="content_description_icon_name_family">name</string>
+    <string name="content_description_icon_email">email</string>
+    <string name="content_description_icon_gift">gift</string>
+
+    <string name="et_search_address_hint_maps">آدرس</string>
+    <string name="content_description_icon_search_maps">search</string>
+    <string name="content_description_icon_my_location">my location</string>
+
+
+    <string name="title_activity_maps">Map</string>
+
+
+    <string name="title_FavAdress">آدرس های منتخب</string>
+    <string name="add_address_FavAdress">افزودن آدرس جدید</string>
+    <string name="edit_address_FavAdress">ویرایش</string>
+    <string name="show_address_FavAdress">نمایش بر روی نقشه</string>
+
+    <string name="add_detail_GetLocation">جزئیات آدرس</string>
+    <string name="cancel_detail_GetLocation">انصراف</string>
+
+    <string name="city_DialogFragment">شهر</string>
+    <string name="title_DialogFragment">عنوان</string>
+    <string name="road_DialogFragment">آدرس</string>
+    <string name="pelak_DialogFragment">پلاک</string>
+    <string name="stair_DialogFragment">طبقه</string>
+    <string name="unit_DialogFragment">واحد</string>
+    <string name="btn_ok_DialogFragment">تایید</string>
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_up_main_background"
+    android:paddingBottom="95dp">
+<ImageView
+    android:id="@+id/imgLogo"
+    android:layout_width="0dp"
+    android:layout_height="90dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:srcCompat="@drawable/ic_edit"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="90dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lin_lyt_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo">
+
+        <LinearLayout
+            android:id="@+id/layoutTxtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/content_description_icon_phone_android"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_phone_android" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iranian_sans"
+                android:text="شماره تلفن همراه"
+                android:textColor="#FFF"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/btn_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/et_bg_login"
+            android:gravity="left"
+            android:hint="@string/et_number_hint_login"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:padding="8dp"
+            android:textColor="@color/ets_color_white"
+            android:textColorHint="@color/et_hint_color"
+            android:textSize="@dimen/btn_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutTxtPhone" />
+
+
+        <Button
+            android:id="@+id/btn_send_number"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_bg_login_splash"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/btn_send_number_text"
+            android:textColor="@color/btn_splash_text_color"
+            android:textSize="@dimen/btn_text_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_number" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
